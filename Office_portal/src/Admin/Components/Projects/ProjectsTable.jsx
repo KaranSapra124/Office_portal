@@ -93,7 +93,7 @@ const ProjectTable = () => {
                     <td className="py-2 px-4 border-b text-center border-r-2">
                       {item?.clientName?.clientName}
                     </td>
-                    <td className="flex justify-center py-2 px-4 border-b border-r-2">
+                    <td className="flex max-[600px]:flex-wrap justify-center py-2 px-4 border-b border-r-2">
                       {/* {console.log(item?.images,'ELELELEM')} */}
                       {item?.images?.map((elem, index) => (
                         <img
