@@ -40,6 +40,7 @@ const Auth = () => {
         {
           result?.token && setCookie("adminToken", result?.token, 10);
         }
+        Naviagte("/dashboard")
       }
     } catch (err) {
       console.log(err);
