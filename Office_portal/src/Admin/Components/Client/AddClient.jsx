@@ -60,7 +60,7 @@ const AddClient = ({ isOpen, setIsOpen, editItem, isEdit, setData }) => {
         const filteredData = prev?.filter(
           (elem) => elem?._id !== editItem?._id
         );
-        return [...filteredData, data?.clientData];
+        return [...filteredData, data?.adminData];
       });
 
       toast.success(data?.message);
