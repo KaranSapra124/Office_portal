@@ -62,6 +62,12 @@ const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
             >
               Add New
             </button>
+             <button
+              onClick={() => setIsOpen(false)}
+              className="bg-red-600  text-white p-2 rounded m-2"
+            >
+              Close
+            </button>
           </div>
           <table className="min-w-full bg-white border border-gray-200">
             <thead>
