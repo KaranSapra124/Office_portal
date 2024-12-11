@@ -98,7 +98,7 @@ const ProjectTable = () => {
                       {item?.images?.map((elem, index) => (
                         <img
                           key={index}
-                          className="w-20 h-20 object-cover mx-1"
+                          className="w-20 h-20 max-[600px]:w-10 max-[600px]:h-10 object-cover mx-1"
                           src={`${
                             import.meta.env.VITE_Backend_url
                           }/admin/get-image/${elem}`}
