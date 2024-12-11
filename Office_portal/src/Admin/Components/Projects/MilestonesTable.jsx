@@ -73,7 +73,7 @@ const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
               </tr>
             </thead>
             <tbody className="text-gray-600 text-sm font-light">
-              {milestones.map((milestone) => (
+              {milestones && milestones?.length > 0 ? milestones?.map((milestone) => (
                 <tr
                   key={milestone._id}
                   className="border-b border-gray-200 hover:bg-gray-100"
@@ -109,7 +109,9 @@ const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
                     </button>
                   </td>
                 </tr>
-              ))}
+              )):<>
+              <h1 className="text-center font-bold">No Data Found!</h1>
+              </>}
             </tbody>
           </table>
         </div>
