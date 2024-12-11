@@ -120,7 +120,7 @@ const ProjectTable = () => {
                         onClick={() => {
                           setIsModal(true);
                           setProjectId(item?._id);
-                          setMilestones(item?.milestones);
+                          setMilestones(item?.Milestones);
                         }}
                         className="text-blue-500 hover:text-blue-700"
                       >
