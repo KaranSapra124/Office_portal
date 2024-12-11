@@ -76,7 +76,10 @@ const AddMilestone = ({ isClose, setIsClose, projectId, isEdit, editItem }) => {
     >
       <div className=" mx-auto m-2   z-[999] rounded-lg">
         {/* {projectId} */}
-        <h2 className="text-xl font-semibold mb-4">Add Milestone</h2>
+       <div className="flex justify-between items-center">
+ <h2 className="text-xl font-semibold mb-4">Add Milestone</h2>
+         <button className="bg-red-500 p-5 rounded" onClick={()=>setIsClose(false)}>Close</button>
+       </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 mb-2" htmlFor="milestoneDate">
