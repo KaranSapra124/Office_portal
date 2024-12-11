@@ -8,7 +8,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://office-portal-backend-jgak.onrender.com",
     credentials: true,
   })
 );
