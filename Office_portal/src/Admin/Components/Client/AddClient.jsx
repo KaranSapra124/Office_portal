@@ -78,9 +78,12 @@ const AddClient = ({ isOpen, setIsOpen, editItem, isEdit, setData }) => {
     <>
       <Modal isOpen={isOpen} onClose={setIsOpen}>
         <div className="max-w-md max-[600px]:max-w-sm h-[30rem] overflow-y-scroll mx-auto p-4">
+        <div className="flex justify-between">
           <h1 className="text-2xl font-bold mb-4 text-gray-700">
             {isEdit ? "Edit " : "Add "} Client
           </h1>
+          <button onClick={()=>setIsOpen(false)} className="bg-red-500 text-white p-2 rounded">Close</button>
+        </div>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700" htmlFor="clientName">
