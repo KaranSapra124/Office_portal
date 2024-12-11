@@ -8,7 +8,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://office-portal-frontend.onrender.com'",
+    origin: "https://office-portal-frontend.onrender.com",
     credentials: true,
   })
 );
