@@ -77,7 +77,7 @@ const AddClient = ({ isOpen, setIsOpen, editItem, isEdit, setData }) => {
   return (
     <>
       <Modal isOpen={isOpen} onClose={setIsOpen}>
-        <div className="max-w-md mx-auto p-4">
+        <div className="max-w-md max-[600px]:max-w-sm h-[30rem] overflow-y-scroll mx-auto p-4">
           <h1 className="text-2xl font-bold mb-4 text-gray-700">
             {isEdit ? "Edit " : "Add "} Client
           </h1>
