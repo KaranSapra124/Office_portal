@@ -56,7 +56,8 @@ const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
             <h1 className="text-2xl font-bold mb-4 text-gray-700">
               Projects Data
             </h1>
-            <button
+            <div>
+              <button
               onClick={() => setIsAdd(true)}
               className="bg-blue-600 text-white p-2 rounded m-2"
             >
@@ -68,6 +69,8 @@ const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
             >
               Close
             </button>
+            </div>
+          
           </div>
           <table className="min-w-full bg-white border border-gray-200">
             <thead>
