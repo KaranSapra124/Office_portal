@@ -80,13 +80,13 @@ const ClientTable = () => {
                     className="hover:bg-gray-100 transition duration-200"
                   >
                     <td className="py-2 px-4 border-b text-center border-r-2">
-                      {item.clientName}
+                      {item?.clientName}
                     </td>
                     <td className="py-2 px-4 border-b text-center border-r-2">
-                      {item.email}
+                      {item?.email}
                     </td>
                     <td className="py-2 px-4 border-b text-center border-r-2">
-                      {item.clientPhone}
+                      {item?.clientPhone}
                     </td>
                     <td className="py-2 px-4 border-b text-center table-auto gap-10 border-r-2">
                       {(() => {
