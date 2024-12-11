@@ -6,6 +6,7 @@ import { postData } from "../../../Utils/commonMethods/postData";
 import toast from "react-hot-toast";
 
 const MilestonesTable = ({ isOpen, setIsOpen, projectId, milestonesData }) => {
+  console.log(milestonesData)
   const [milestones, setMilestones] = useState(milestonesData);
   const [editItem, setEditItem] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
